@@ -1,0 +1,80 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/index_style.css">
+      <link rel="stylesheet" href="css/all.min.css">
+
+      
+    </head>
+    <body>
+
+      <h1 class=" text-center text-danger pt-4"> CRUD APPLICTION</h1>
+
+      <div class="container py-5">
+
+        <div class="form-group">
+           <label class=" text-danger">proudct name</label>
+           <input type="text" name="" id="proudctName" class="form-control">
+        </div>
+ 
+        <div class="form-group">
+         <label class=" text-danger">proudct price</label>
+         <input type="text" name="" id="proudctPrice" class="form-control">
+      </div>
+ 
+      <div class="form-group">
+         <label class=" text-danger">proudct category</label>
+         <input type="text" name="" id="proudctCat" class="form-control">
+      </div>
+ 
+      <div class="form-group">
+         <label class=" text-danger">proudct decsription</label>
+         <textarea type="text" name="" id="proudctDec" class="form-control"> </textarea>
+      </div>
+ 
+      <button id="myAddBtn" onclick="addProudct()" class=" btn btn-danger"> Add proudect</button>
+      <button id="myUpadteBtn" onclick="saveUpdateProduct()" class="btn btn-warning">update Product</button>
+ 
+    </div>
+ 
+ 
+    <input onkeyup="serchProudct(this.value)" class=" form-control  w-50 m-auto " placeholder="search proudct">
+    
+    <div class=" container py-5">
+        <table class=" table">
+            <thead class=" text-danger">
+            
+                <th> Name</th>
+                <th> Price</th>
+                <th> Category</th>
+                <th> description</th>
+                <th>delet</th>
+                <th>update</th>
+               
+            </thead>
+            <tbody id="tBody">
+ 
+            </tbody>
+ 
+        </table>
+ 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+      
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+
+        <script src="mine.js"></script> 
+    </body>
+</html>
